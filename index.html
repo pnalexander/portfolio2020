@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Paul Alexander</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/css/uikit.min.css" />
+
+</head>
+
+<body>
+  <header>
+    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
+      <a class="uk-navbar-center uk-navbar-item uk-logo" href="#">Paul Alexander</a>
+      <ul class="uk-navbar-nav uk-visible@l">
+          <li class="uk-active"><a href="#">Item</a></li>
+          <li class="uk-parent"><a href="#">Item</a></li>
+          <li><a href=""></a></li>
+      </ul>
+      <a href="#offcanvas-slide" class="uk-navbar-toggle uk-hidden@l" uk-toggle uk-icon="icon: menu"></a>
+    </nav>
+
+    <nav id="offcanvas-slide" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+            <ul class="uk-nav uk-nav-default">
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li><a href="#">Item</a></li>
+                <li class="uk-nav-header">Header</li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#">Item</a></li>
+            </ul>
+
+        </div>
+    </nav>
+  </header>
+  <main class="uk-container">
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit-icons.min.js"></script>
+
+  <script>
+    // new Vue({
+    //   el: 'main',
+    //   data: {
+    //     message: 'Hello World'
+    //   }
+    // });
+  </script>
+</body>
+</html>
