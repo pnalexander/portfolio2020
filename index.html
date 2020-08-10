@@ -9,16 +9,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/css/uikit.min.css" />
 
   <style>
+    section {
+      min-height: 100vh;
+    }
     .intro {
       display: flex;
-      /* max-width: 100vw; */
-      min-height: 100vh;
-      /* margin: 0 auto; */
       flex-direction: column;
       align-items: center;
       justify-content: center;
       margin-top: -80px;
-      padding: 0 0.5rem;
     }
     .intro-heading {
       font-size: 1rem;
@@ -29,6 +28,26 @@
     }
     .pad-bottom {
       padding-bottom: 2rem;
+    }
+    .self-portrait {
+      display: block;
+      margin: 2em auto;
+      max-width: 75%;
+    }
+    .tech-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      list-style-type: none;
+      padding: 0;
+    }
+    .tech-list li::before {
+      content: '\203A\00A0\00A0';
+    }
+    .tech-list li {
+      align-self: start;
+      justify-self: start;
+      margin: .25em 0;
     }
   </style>
 </head>
@@ -62,20 +81,31 @@
     </nav>
   </header>
   <main class="uk-container">
-    <section class="intro">
+    <section class="intro" uk-scrollspy="cls:uk-animation-fade; delay: 200">
       <div>
         <h1><span class="intro-heading">Hello, my name is </span>Paul Alexander.</h1>
         <h2>I design and build products and solutions.</h2>
-        <p class="pad-bottom">I'm a web developer and product designer in Raleigh, NC. I specialize in full-stack development aimed at solving business problems both large and small, simple or complex.</p>
+        <p class="pad-bottom">I'm a web developer and product designer in Raleigh, NC. I specialize in full-stack development aimed at solving business problems both large and small, simple or complex. I also like to make things with my hands, like furniture.</p>
         <a class="uk-button uk-button-default" href="#">Hire me!</a>
       </div>
     </section>
 
-    <section class="background">
-      <h3>Background</h3>
+    <section class="about" uk-scrollspy="cls:uk-animation-slide-bottom; delay: 200">
+      <h3 class="heading">About Me</h3>
       <p>Hi, my name is Paul and I'm a web developer and product designer based in Raleigh, NC.</p>
-      <p>I enjoy creating things, whether they're websites, apps, or even physical products - it's all for me. Creating things is my passion and my goal is to live my life doing what I love, especially if I can make someone else's life better by helping them solve a problem.</p>
-      <p></p>
+      <p>I enjoy creating things, whether they're websites, apps, or even physical products - I like it all. Creating things is my passion and my goal is to live my life doing what I love, especially if I can improve someone else's life by helping them solve their problems.</p>
+      <img data-src="images/mydumbface.jpg" width="" height="" alt="" class="self-portrait uk-border-rounded uk-box-shadow-large" uk-img>
+      <p>Here are some tools &amp; technologies I've recently worked with:</p>
+      <ul class="tech-list">
+        <li>PHP</li>
+        <li>MySQL</li>
+        <li>HTML & (S)CSS</li>
+        <li>JavaScript (ES6)</li>
+        <li>Laravel</li>
+        <li>Vue</li>
+        <li>FDM Printers</li>
+        <li>Saws with blades</li>
+      </ul>
     </section>
 
   </main>
