@@ -1,0 +1,43 @@
+section {
+  min-height: 100vh;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -80px;
+}
+.intro-heading {
+  font-size: 1rem;
+}
+.intro-heading::after {
+  content: "\a";
+  white-space: pre;
+}
+.pad-bottom {
+  padding-bottom: 2rem;
+}
+.self-portrait {
+  display: block;
+  margin: 2em auto;
+  max-width: 75%;
+}
+.tech-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+.tech-list li::before {
+  content: '\203A\00A0\00A0';
+}
+.tech-list li {
+  align-self: start;
+  justify-self: start;
+  margin: .25em 0;
+}
+.uk-card {
+  margin-bottom: 2rem;
+}

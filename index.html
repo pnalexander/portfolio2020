@@ -6,55 +6,14 @@
 
   <title>Paul Alexander | Web Developer</title>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/css/uikit.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/css/uikit.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
-  <style>
-    section {
-      min-height: 100vh;
-    }
-    .intro {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-top: -80px;
-    }
-    .intro-heading {
-      font-size: 1rem;
-    }
-    .intro-heading::after {
-      content: "\a";
-      white-space: pre;
-    }
-    .pad-bottom {
-      padding-bottom: 2rem;
-    }
-    .self-portrait {
-      display: block;
-      margin: 2em auto;
-      max-width: 75%;
-    }
-    .tech-list {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      align-items: center;
-      list-style-type: none;
-      padding: 0;
-    }
-    .tech-list li::before {
-      content: '\203A\00A0\00A0';
-    }
-    .tech-list li {
-      align-self: start;
-      justify-self: start;
-      margin: .25em 0;
-    }
-  </style>
 </head>
 
 <body>
   <header>
-    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
+    <nav class="uk-navbar-container" uk-navbar uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
       <!-- <a class="uk-navbar-center uk-navbar-item uk-logo" href="#">Paul Alexander</a> -->
       <ul class="uk-navbar-nav uk-visible@l">
           <li class="uk-active"><a href="#">Item</a></li>
@@ -106,6 +65,90 @@
         <li>FDM Printers</li>
         <li>Saws with blades</li>
       </ul>
+    </section>
+
+    <section class="projects" uk-scrollspy="cls:uk-animation-slide-bottom; delay: 200">
+      <h3>Projects</h3>
+      <article class="uk-card uk-card-default" uk-scrollspy="cls:uk-animation-slide-bottom; delay: 200">
+        <!-- <div class="uk-card-header">
+          <h4 class="uk-card-title">Project Title</h4>
+        </div> -->
+        <div class="uk-card-media-top">
+            <img src="https://placehold.it/500x400&text=Placeholder" alt="">
+        </div>
+        <!-- <p class="uk-card-body">Project Description goes here...</p> -->
+        <div class="uk-card-body">
+            <h3 class="uk-card-title">Project Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+        <!-- <div class="uk-card-footer">
+          <a href="#" class="uk-button uk-button-text">Footer Link</a>
+        </div> -->
+      </article>
+      <article class="uk-card uk-card-default" uk-scrollspy="cls:uk-animation-slide-bottom; delay: 200">
+        <!-- <div class="uk-card-header">
+          <h4 class="uk-card-title">Project Title</h4>
+        </div> -->
+        <div class="uk-card-media-top">
+            <img src="https://placehold.it/500x400&text=Placeholder" alt="">
+        </div>
+        <!-- <p class="uk-card-body">Project Description goes here...</p> -->
+        <div class="uk-card-body">
+            <h3 class="uk-card-title">Project Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+        <!-- <div class="uk-card-footer">
+          <a href="#" class="uk-button uk-button-text">Footer Link</a>
+        </div> -->
+      </article>
+      <article class="uk-card uk-card-default" uk-scrollspy="cls:uk-animation-slide-bottom; delay: 200">
+        <!-- <div class="uk-card-header">
+          <h4 class="uk-card-title">Project Title</h4>
+        </div> -->
+        <div class="uk-card-media-top">
+            <img src="https://placehold.it/500x400&text=Placeholder" alt="">
+        </div>
+        <!-- <p class="uk-card-body">Project Description goes here...</p> -->
+        <div class="uk-card-body">
+            <h3 class="uk-card-title">Project Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+        <!-- <div class="uk-card-footer">
+          <a href="#" class="uk-button uk-button-text">Footer Link</a>
+        </div> -->
+      </article>
+      <article class="uk-card uk-card-default" uk-scrollspy="cls:uk-animation-slide-bottom; delay: 200">
+        <!-- <div class="uk-card-header">
+          <h4 class="uk-card-title">Project Title</h4>
+        </div> -->
+        <div class="uk-card-media-top">
+            <img src="https://placehold.it/500x400&text=Placeholder" alt="">
+        </div>
+        <!-- <p class="uk-card-body">Project Description goes here...</p> -->
+        <div class="uk-card-body">
+            <h3 class="uk-card-title">Project Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+        <!-- <div class="uk-card-footer">
+          <a href="#" class="uk-button uk-button-text">Footer Link</a>
+        </div> -->
+      </article>
+      <article class="uk-card uk-card-default" uk-scrollspy="cls:uk-animation-slide-bottom; delay: 200">
+        <!-- <div class="uk-card-header">
+          <h4 class="uk-card-title">Project Title</h4>
+        </div> -->
+        <div class="uk-card-media-top">
+            <img src="https://placehold.it/500x400&text=Placeholder" alt="">
+        </div>
+        <!-- <p class="uk-card-body">Project Description goes here...</p> -->
+        <div class="uk-card-body">
+            <h3 class="uk-card-title">Project Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+        <!-- <div class="uk-card-footer">
+          <a href="#" class="uk-button uk-button-text">Footer Link</a>
+        </div> -->
+      </article>
     </section>
 
   </main>
